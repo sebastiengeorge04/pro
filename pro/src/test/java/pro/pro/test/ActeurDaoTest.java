@@ -90,6 +90,17 @@ public class ActeurDaoTest {
 				PreparedStatement stmt = connection.prepareStatement("DELETE * FROM acteurssite WHERE id_acteur ="+id_acteur)) {
 			assertThat(id_acteur).isNull();
 		}
-		
+			public void shouldUpdateActeur() throws Exception  {
+		public void shouldDeleteActeur() throws Exception {
+			// WHEN
+			Acteur acteur = new Acteur(6,"oo","oo","oo","oo");
+			acteur = acteurDao.ModifActeur(acteur);
+			Integer id_acteur=acteur.getId_acteur();
+			try (Connection connection = DataSourceProvider.getDataSource().getConnection();
+					PreparedStatement stmt = connection.prepareStatement("UPDATE * FROM acteurssite SET nom='jacky' WHERE id_acteur =6")) {
+				
+			}
+			assertThat(acteur.getNom()).isEqualTo("jacky");
+	}
 }
 }
