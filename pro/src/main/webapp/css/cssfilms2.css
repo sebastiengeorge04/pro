@@ -1,0 +1,168 @@
+body {
+	background-color:#FFFAF0;
+}
+
+header#principal {
+	
+	position:absolute;
+	top:0px;
+	center:0px;
+	width: 100%;
+
+	
+
+	
+}
+
+header#principal h1,h6 {
+	text-align:center;
+}
+#nav  {
+
+  position:fixed;
+   left:10px;
+   top:150px;
+}
+#nav li a {
+  display: block ;
+  background: #c00 ;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+}
+#nav li a:hover, #nav li a:focus, #nav li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+#movies {
+margin-top:10px;
+	 position:relative;
+margin-left:3.5cm;
+width:85%;
+}
+
+
+footer {
+	text-align :center;
+	position : fixed;
+	background-color:#31ACE0;
+	bottom:0px;
+width: 100%;
+	
+}
+article p,article h1{
+	color:#F0F0F0;
+}
+article {
+	background-color:##FFFAF0;
+	border-radius: 10px;
+	margin-bottom:10px;
+}
+
+aside {
+	background-color:#FFFCE0;
+	position:absolute;
+	right:100px;
+}
+
+#nav2{
+	margin-top:50px;
+    position:static;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    width: 100%;
+	
+	
+}
+#nav2 a{
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:black;
+}
+#nav2 a:hover{
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:red;
+}
+#nav2 ul li{
+	display:inline-block;
+}
+table{
+	
+	table-layout:auto;
+	border-spacing:5px;
+	width:70%;
+	background-color:#F8F8FF;
+	opacity: 0.8;
+    filter:alpha(opacity=0.85*100);
+-moz-opacity:valeur;
+}
+table,td {
+	border: solid 1px black;
+	border-collapse:separate;
+	margin: 0 auto;
+	text-align:center;
+
+	
+}
+td {
+	color:#FF0000;
+	font-weight:700;
+}
+ #titre img{
+	display: block; 
+     margin: 0 auto;
+	 height:400px;
+	 width:620px;
+}
+#titre  {
+	position:static;
+	width:100%;
+	margin-top:100px;
+}
+#nav2 li{
+	padding-right: 30px;
+}
+}
+ #audio {
+	 position: static;
+	 margin-top:125px;
+	 
+ }
+ #audio p {
+	 margin-left:60px;
+	 color:black;
+	 font-family:Cambria;
+	 font-style:bold;
+	 font-size:20px;
+ }
+ 
+body{
+	
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+	background-attachment:fixed;
+	background-size: cover;
+	
+	
+	
+}

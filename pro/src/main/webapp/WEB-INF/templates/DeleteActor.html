@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>
+Supprimer un Acteur
+</title>
+<link href="css/formfilms.css" rel="stylesheet" media="all" type="text/css"> 
+<meta charset="UTF-8">
+</head>
+
+<header id="entete">
+<h1>Supprimer UN ACTEUR</h1>
+</header>
+
+<div id="titre">
+<img src="img/funny.gif" alt="Photo" title="contact"  />
+</div>
+<body background="img/8.jpg">
+<!-- menus-->
+<div id="nav" th:replace="~{common :: menu}"></div>
+	
+
+
+
+
+
+
+	
+<form id="delete" method="POST" action="deleteactor">
+<h1 align="center">Supprimer UN ACTEUR</h1>
+
+
+
+<div>
+<label for="id_acteur">id de l'acteur</label>
+<input type="text" name="id_acteur" id="id_acteur"/>
+</div>
+<div>
+<label for="nom">nom de l'acteur</label>
+<input type="text" name="nom" id="nom"/>
+</div>
+
+
+
+
+<div id="boutons">
+<input type="reset" value="Effacer" />
+<input id="bouton" type="submit" value="Envoyer" />
+</div>
+</form>
+
+		<div align="center" class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Les acteurs en temps réel</h3>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nom</th>
+							<th>Prenom</th>
+							<th>Date de naissance</th>
+							<th>Nationalite</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="acteur : ${acteurs}">
+							<td th:text="${acteur.id_acteur}"></td>
+							<td th:text="${acteur.nom}"></td>
+							<td th:text="${acteur.prenom}"></td>
+							<td th:text="${acteur.date_naissance}"></td>
+							<td th:text="${acteur.nationalite}"></td>
+							
+							
+							
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+
+</body>
+</html>

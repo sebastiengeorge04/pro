@@ -1,0 +1,38 @@
+#nav2 li{
+	padding-right: 30px;
+}
+#nav2{
+	margin-top:50px;
+    position:static;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    width: 100%;
+	
+	
+}
+#nav2 a{
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:black;
+}
+#nav2 a:hover{
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:red;
+}
+#nav2 ul li{
+	display:inline-block;
+}

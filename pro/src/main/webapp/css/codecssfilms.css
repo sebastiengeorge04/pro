@@ -1,0 +1,190 @@
+header#entete h1{  
+text-align:center;
+color:#black;
+}
+
+body{
+	
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+	background-attachment:fixed;
+	background-size: cover;
+	
+	
+	
+}
+#nav li {
+	padding-right: 30px;
+}
+
+#nav {
+	margin-top:50px;
+    position:static;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    width: 100%;
+	
+}
+#nav a {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:black;
+}
+#nav a:hover {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color:red;
+}
+#nav ul li{
+	display:inline-block;
+}
+table{
+	
+	table-layout:auto;
+	border-spacing:5px;
+	width:70%;
+	
+}
+table,td {
+	border: solid 1px black;
+	border-collapse:separate;
+	margin: 0 auto;
+	text-align:center;
+
+	
+}
+td.txt{
+	width:70%;
+}
+ #tab {
+	 position:relative;
+	 margin-top:20px;
+	 margin-left: 0px;
+	 
+ }
+ 
+#entete {
+    
+	position:absolute;
+	top:0px;
+	center:0px;
+	width: 100%;
+
+}
+#entete h1 {  
+text-align:center;
+color:black;
+}
+article h1{
+	text-align:center;
+	font-size:28px;
+	font-family:Cambria;
+	color:black;
+}
+ #titre img{
+	display: block; 
+     margin: 0 auto;
+	 height:400px;
+	 width:620px;
+}
+#titre  {
+	position:static;
+	width:100%;
+	margin-top:100px;
+}
+#nav li {
+	padding-right: 30px;
+}
+
+#pages {
+	margin-top:50px;
+    position:static;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    width: 100%;
+	
+}
+#pages a {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: #black;
+}
+#pages a:hover {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: #black;
+}
+#pages p {
+	text-align:center;
+}
+
+#pages ul li {
+	display:inline-block;
+	text-align:center;
+}
+
+#blocgauche {
+float:left;
+width:100px;
+border:1px solid black;
+background-image:url(img/wall.jpg);
+}
+#nav2
+{
+	float:left;
+	position:fixed;
+   left:0px;
+   top:150px;
+   border: 0.5px solid black;
+	
+
+}
+#contenu {
+	
+    margin-top:100px;
+	position:relative;
+    margin-left:3.5cm;
+	margin-right:1cm;
+	width:80%;
+}
+ #audio {
+	 position: static;
+	 margin-top:125px;
+	 
+ }
+ #audio p {
+	 margin-left:60px;
+	 color:white;
+	 font-family:Cambria;
+	 font-style:bold;
+	 font-size:20px;
+ }

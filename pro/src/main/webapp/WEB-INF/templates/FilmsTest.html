@@ -1,0 +1,97 @@
+<html>
+<head>
+<link href="css/csstestfilm.css" rel="stylesheet" media="all" type="text/css"> 
+<title>
+FILMS
+</title>
+<meta charset="UTF-8">
+</head>
+<body background="img/fondd.jpeg">
+
+<header id="principal">
+<h1>Les films !</h1>
+
+
+
+</header>
+<div id="titre">
+<img src="img/rockapo.jpg" alt="Photo" title="contact"  />
+</div>
+
+<div id="nav" th:insert="~{common :: menu}"></div>
+
+
+
+		<div th:each="film : ${films}" class="capclear2 clearfix aw"> <img src="img/bah.png"  width="220" height="230" />
+				<ul>
+					<li><span>Titre:</span><i><p th:text="${film.name}"></p></i></li>
+					<li><span>Réalisateur:</span><i><p th:text="${film.director}"></i></p></li>
+					<li><span>Année:</span><i><p th:text="${film.releaseDate}"></p></i></li>
+					<li><span>Durée:</span><i><p th:text="${film.duration}"></p></i></li>
+					
+					
+					<li>Description:</li>
+					<li>
+						<i><p th:text="${film.summary}"></i></p>
+					</li>
+				</ul>
+			</div>
+			
+
+<!-- 
+<p align="center"> Vous pouvez aussi modifier un film! </p>
+
+</div>
+
+<form>
+<h1 align="center">MODIFIER UN FILM</h1>
+
+
+<div>
+<label>Nom du film</label>
+<input type="text" name="nom" />
+</div>
+
+<div>
+<label>Année de réalisation</label>
+<input type="text" name="year" />
+</div>
+
+<div>
+<label>Acteur(s)</label>
+<select name="acteurs">
+<option value="Sly">Sylvester Stallone</option>
+<option value="Schwarzy">Arnold Schwarzennegger</option>
+<option value="bru">Bruce Willis</option>
+<option value="JCVD">Jean-Claude Van Damme</option>
+<option value="plusieurs">Plusieurs de ces acteurs</option>
+</select>
+</div>
+<div>
+<label>Nom du Réalisateur</label>
+<input type="text" name="nomreal" />
+</div>
+<div>
+<label>Durée</label>
+<input type="text" name="durée" />
+</div>
+<div>
+<label>Résumé du film</label>
+<textarea name="resume">Tapez ici votre texte</textarea>
+</div>
+<div>
+<label>Notez ce film</label>
+<input type="number" min="0" max="10" step="0.5" value="5" name="critique">
+</div>
+
+<div id="boutons">
+<input type="reset" value="Effacer" />
+<input type="submit" value="Envoyer" />
+</div>
+
+</form>
+ -->
+
+
+</body>
+</html>

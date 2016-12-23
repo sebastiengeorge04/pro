@@ -1,0 +1,53 @@
+body{
+	
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+	
+	background-size: cover;
+	
+	
+}
+}
+
+#nav li {
+	padding-right: 30px;
+}
+
+#nav {
+	margin-top:50px;
+    position:static;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    width: 100%;
+	
+}
+#nav a {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: black;
+}
+#nav a:hover {
+	text-decoration: none;
+	font-family: Cambria, serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: normal;
+	letter-spacing: normal;
+	line-height: 1.3em;
+	color: #DC143C;
+}
+ ul,li{
+	display:inline-block;
+	
+}

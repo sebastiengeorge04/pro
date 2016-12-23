@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Films
+</title>
+
+
+<header id="entete">
+<h1>Liste des films et acteurs</h1>
+</header>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/cssdelaliste.css" rel="stylesheet">
+  </head>
+ 
+<body background="img/white.jpg">
+  <body>
+<div id="nav" th:replace="~{common :: menu}"></div>
+	
+	<div align="center" class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Films</h3>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+								<th>#</th>
+							<th>Nom</th>
+							<th>Realisateur</th>
+							<th>Release date</th>
+							<th>Note</th>
+							<th>acteur</th>
+							<th>durée</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="film : ${films}">
+							<td th:text="${film.id}"></td>
+							<td th:text="${film.name}"></td>
+							<td th:text="${film.director}"></td>
+							<td th:text="${film.releaseDate}"></td>
+							<td th:text="${film.note}"></td>
+							<td th:text="${film.acteur.nom}"></td>
+							<td th:text="${film.duration}"></td>
+							
+							
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+			
+				<div align="center" class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h3>Acteurs</h3>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nom</th>
+							<th>Prenom</th>
+							<th>Date de naissance</th>
+							<th>Nationalite</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="acteur : ${acteurs}">
+							<td th:text="${acteur.id_acteur}"></td>
+							<td th:text="${acteur.nom}"></td>
+							<td th:text="${acteur.prenom}"></td>
+							<td th:text="${acteur.date_naissance}"></td>
+							<td th:text="${acteur.nationalite}"></td>
+							
+							
+							
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+			<a align="center" href="details" font-size="larger">Voir les films</a>
+    	</div>
+	</div>
+  </body>
+</html>

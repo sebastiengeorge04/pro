@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+Films
+</title>
+<link href="css/formfilms.css" rel="stylesheet" media="all" type="text/css"> 
+<meta charset="UTF-8">
+</head>
+
+<header id="entete">
+<h1>AJOUTER UN ACTEUR</h1>
+</header>
+
+<div id="titre">
+<img src="img/sch.gif" alt="Photo" title="contact"  />
+</div>
+<body background="img/8.jpg">
+<!-- menus-->
+<div id="nav" th:replace="~{common :: menu}">
+</div>
+	
+
+
+
+
+
+
+	
+<form method="POST" action="addactor">
+<h1 align="center">AJOUTER UN ACTEUR</h1>
+
+<div>
+<label for="name">Nom de l'acteur</label>
+<input type="text" name="nom" id="nom"/>
+</div>
+<div>
+<label for="releaseDate">Prenom de l'acteur</label>
+<input type="text" name="prenom" id="prenom"/>
+</div>
+
+<div>
+<label for="director">Date de naissance (format xx-xx-xxxx)</label>
+<input type="text" name="date_naissance" id="date_naissance"/>
+</div>
+<div>
+<label for="duration">Nationalite</label>
+<input type="text" name="nationalite" id="nationalite"/>
+</div>
+
+<div id="boutons">
+<input type="reset" value="Effacer" />
+<input type="submit" value="Envoyer" />
+</div>
+</form>
+
+<a href="deleteactor">Supprimer un acteur</a>
+<a href="modif">Modifier un acteur</a>
+
+</body>
+</html>
